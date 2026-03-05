@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Light and Sound Memory Game</title>
+        <link rel="stylesheet" href="Game.css">
+    </head>
+    <body>
+        <h1><b><i>Light and Sound Memory Game</i></b></h1>
+        <p>Welcome to Ariane Doris's Light and Sound Memory Game.</p>
+        <p> Repeat the pattern again to win this game.If the pattern is not repeated correctly, the game ends.</p>
+        <br>
+        <button id="startButton" onclick="startGame()"><b>Start Game</b></button>
+        <button id="stopButton" class="hide" onclick="stopGame()"><b>Stop Game</b></button>
+        <br>
+        <div class="BOXES">
+        <div  class="box" onmousedown="input(1)" onmouseup="release(1)" id ="box1" onclick="input(1)"> </div>
+        <div  class="box" onmousedown="input(2)" onmouseup="release(2)" id ="box2" onclick="input(2)"> </div>
+        <div  class="box" onmousedown="input(3)" onmouseup="release(3)" id ="box3" onclick="input(3)"> </div>
+        <div  class="box" onmousedown="input(4)" onmouseup="release(4)" id ="box4" onclick="input(4)"> </div>
+        <script src="Game.js"></script>
+
+    </body>
+</html>
